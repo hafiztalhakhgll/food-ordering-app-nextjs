@@ -1,6 +1,7 @@
+import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import Featured from "../components/Featured";
-import styles from "../styles/Home.module.css";
+import PizzaList from "../components/Pizza.jsx";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
 
       <Featured />
+      <PizzaList />
     </div>
   );
 }
