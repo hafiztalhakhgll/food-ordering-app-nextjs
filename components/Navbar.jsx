@@ -1,5 +1,6 @@
 import styles from "../styles/Navbar.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -16,8 +17,12 @@ function Navbar() {
 
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Home</li>
-          <li className={styles.listItem}>Products</li>
+          <li className={styles.listItem}>
+            <Link href="/">Home</Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href="/products">Products</Link>
+          </li>
           <li className={styles.listItem}>Menu</li>
           <Image src="/img/logo.png" alt="logo" width="160" height="69" />
           <li className={styles.listItem}>Events</li>
